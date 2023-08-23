@@ -2,6 +2,11 @@
 
 A library to generate Entity-Relationship Diagrams from a database schema.
 
+
+### Supported Databases
+
+- PostgreSQL
+
 ## Installation
 
 You can install this library by cloning the repository and running:
@@ -9,6 +14,8 @@ You can install this library by cloning the repository and running:
 ```bash
 pip install .
 ```
+
+## Usage
 
 ```python
 from erd_generator import generate_erd
@@ -26,7 +33,6 @@ generate_erd(database_url, 'public', ['authors', 'books', 'books_authors', 'publ
 
 - **tables_to_include**: A list of table names to include in the ERD. If not provided, all tables will be included.
 
+## Generated ERD
 
-### Supported Databases
-
-- PostgreSQL
+![ERD](results/ERD.png)
